@@ -10,6 +10,10 @@ public class CuentaCorriente extends Cuenta{
         
     }
 
+    public float getSobregiro() {
+        return sobregiro;
+    }
+
     @Override
     public void retirar(float cantidad) {
         if (cantidad <= saldo) {
@@ -17,6 +21,7 @@ public class CuentaCorriente extends Cuenta{
             
         } else {
             sobregiro = cantidad - saldo;
+            saldo=0;
             numeroRetiros++;
             System.out.println("Retiro realizado. Saldo actual: -" + sobregiro);
             
