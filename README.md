@@ -11,6 +11,5 @@ Este proyecto simula una cuenta bancaria con distintas características. La clas
 - Java
 - Spring Boot
 - Maven
-- JDK 11 o superior.
-- Librerías de JUnit y Hamcrest para pruebas.
+- JUnit y Hamcrest para pruebas.
 
